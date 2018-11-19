@@ -20,15 +20,15 @@ Pod::Spec.new do |s|
   #s.source_files  = "Sources/**/*.{h,m,swift}", "Vendor/**/*.{h,m,c}"
 
   s.subspec 'Libraries' do |ss|
-    ss.source_files = "Libraries/**/*.{h,m,swift}"
+    ss.source_files = "Libraries/**/*.{h,m,c,swift}"
   end
 
   s.subspec 'AnyCodable' do |ss|
-    ss.source_files = "Dependencies/AnyCodable/Sources/AnyCodable/**/*.{h,m,c}"
+    ss.source_files = "Dependencies/AnyCodable/Sources/AnyCodable/**/*.{h,m,c,swift}"
   end
 
   s.subspec 'Sources' do |ss|
-    ss.source_files = "Sources/SwiftyEOS/**/*.{h,m,c}", "Sources/Utils/**/*.{h,m,c}"
+    ss.source_files = "Sources/SwiftyEOS/**/*.{h,m,c}", "Sources/Utils/**/*.{h,m,c,swift}"
     ss.dependency "SwiftyEOS/AnyCodable"
     ss.dependency "SwiftyEOS/Libraries"
   end
