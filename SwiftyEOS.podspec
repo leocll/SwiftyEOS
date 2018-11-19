@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'Sources' do |ss|
-    ss.source_files = "Sources/SwiftyEOS/**/*.{h,m,c}", "Sources/Utils/**/*.{h,m,c,swift}"
+    ss.source_files = "Sources/SwiftyEOS/**/*.{h,m,c,swift}", "Sources/Utils/**/*.{h,m,c,swift}"
     ss.dependency "SwiftyEOS/AnyCodable"
     ss.dependency "SwiftyEOS/Libraries"
   end
